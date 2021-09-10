@@ -5,7 +5,7 @@ const SecondaryTextColor = Color(0xFF424242);
 const BgColor = Color(0xffefeff0);
 
 const ButtonGradientColor = LinearGradient(
-  // begin: Alignment.topLeft,
-  // end: Alignment.bottomRight,
-  colors: [Color(0xFFFF460C), Color(0xFFFF9432)],
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+  colors: [Color(0xFFFF9432),Color(0xFFFF460C)],
 );
