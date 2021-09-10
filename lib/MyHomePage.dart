@@ -36,7 +36,9 @@ class MyHomePage extends StatelessWidget {
               SizedBox(
                 height: 15.0,
               ),
-              Center(child: SearchButton()),
+              Center(child: SearchButton(onPress: (){
+                print('onPress');
+              },)),
               Query(
                 options: QueryOptions(document: gql(_query)),
                 builder: (QueryResult result, {fetchMore, refetch}) {
