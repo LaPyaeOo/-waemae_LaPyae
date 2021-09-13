@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:waemaeskeleton/constants/colors.dart';
 
 class SearchButton extends StatelessWidget {
-  SearchButton({required this.onPress});
+  SearchButton({required this.onPress,required this.buttonLabel});
   final VoidCallback onPress;
+  final String buttonLabel;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +18,7 @@ class SearchButton extends StatelessWidget {
         child: RawMaterialButton(
           onPressed: onPress,
           child: Text(
-            'Filter Search'.toUpperCase(),
+            buttonLabel.toUpperCase(),
             style: TextStyle(
               fontSize: 16,
               color: Colors.white,

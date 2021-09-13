@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               scaffoldBackgroundColor: BgColor
           ),
           debugShowCheckedModeBanner: false,
-          home: MyHomePage(),
+          home: MyHomePage(client: client,),
         ),
       ),
     );
